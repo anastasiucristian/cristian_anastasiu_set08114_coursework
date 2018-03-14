@@ -1,0 +1,83 @@
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:padding="10dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:contentPadding= "5dp"
+    card_view:cardUseCompatPadding="true"
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:id="@+id/ivDriverProfile"
+            android:layout_marginLeft="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDriverName"
+            android:text="Driver Name, age"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/ivDriverProfile"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvStartPoint"
+            android:layout_marginLeft="6dp"
+            android:text="From"
+            android:layout_below="@+id/tvDriverName"
+            android:layout_toRightOf="@+id/ivDriverProfile"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEndPoint"
+            android:layout_marginLeft="6dp"
+            android:text="Destination"
+            android:layout_below="@+id/tvStartPoint"
+            android:layout_toRightOf="@+id/ivDriverProfile"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDateTime"
+            android:layout_marginLeft="6dp"
+            android:text="On: date, at: time"
+            android:layout_below="@+id/tvEndPoint"
+            android:layout_toRightOf="@+id/ivDriverProfile"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tvSeatsLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvDateTime"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="N seats left"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>
